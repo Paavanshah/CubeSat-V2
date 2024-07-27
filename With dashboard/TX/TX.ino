@@ -64,7 +64,7 @@ void loop() {
   
   // Prepare data to send in chunks
   String data = String(temperatureInt) + "," + String(pressureInt) + "," + String(altitudeInt) + "," +
-                String(ax) + "," + String(ay) + "," + String(az);
+                String(ax) + "," + String(ay) + "," + String(az/100) + "," + String(humidityInt);
 
   // Split data into chunks if necessary
   int chunkSize = 27; // Adjust this size as needed
